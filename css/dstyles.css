@@ -1,12 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
-
-/* roboto-regular - cyrillic_latin_cyrillic-ext */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -195,7 +187,6 @@ h1, h2, h3, p {
   -o-transition: color 0.3s;
   transition: color 0.3s;  
   color: #fc557c;
-  border-bottom: 1px solid #fc557c;
 }
 .right-call {
   display: -webkit-box;
