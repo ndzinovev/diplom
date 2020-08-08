@@ -58,21 +58,53 @@ $(document).ready(function(){
     $('.touch-menu').append('<div class="line"></div>');
 });
 
-	$('.order_call').click(function() {
-    $('.fon-popup').show(500, "swing");
-    $("body").addClass("fixed");
-  }) 
-  $('.hidden-call').click(function() {
-    $('.fon-popup').show(500, "swing");
+  $('.order_call , .hidden-call').click(function(event) {                //обработка заказа звонка
+     $('.fon-popup , .feedback-bell').show(400, "swing");
+     let pagePosition = window.scrollY;
+     document.body.dataset.position = pagePosition;
+  	 document.body.style.top = -pagePosition + 'px';
     $("body").addClass("fixed");
   }) 
   
   
- 
-  $('.cross').click(function(){
-    $('.fon-popup').hide(500, "swing");
-    $("body").removeClass("fixed");
-  })
+  
+  $('.cross').click(function(event){
+      $('.fon-popup , .feedback-bell').hide(400, "swing");
+      let pagePosition = parseInt(document.body.dataset.position, 10);
+      $("body").removeClass('fixed') ;
+      window.scroll({ top: pagePosition, left: 0 });
+    
+   // document.body.removeAttribute('data-position');
+    
+
+    
+  })  //////////////////////////////////////////////////////////////////////////////////////////
+
+  $('.a-my-page , .a-maney').click(function(event) {  //обработка кнопки Узнать больше
+    $('.fon-popup , .know-more')
+        $('.fon-popup , .know-more').show(400, "swing");
+        let pagePosition = window.scrollY;
+        document.body.dataset.position = pagePosition;
+  	    document.body.style.top = -pagePosition + 'px';
+    $("body").addClass("fixed");
+  }) 
+  $('.hidden-call').click(function(event) {
+        $('.fon-popup , .know-more').show(400, "swing");
+        let pagePosition = window.scrollY;
+        document.body.dataset.position = pagePosition;
+        document.body.style.top = -pagePosition + 'px';
+    $("body").addClass("fixed");
+  }) 
+  
+  
+  $('.cross').click(function(event){
+    $('.fon-popup , .know-more').hide(400, "swing");
+    let pagePosition = parseInt(document.body.dataset.position, 10);
+    $("body").removeClass('fixed') ;
+    window.scroll({ top: pagePosition, left: 0 });
+    //document.body.removeAttribute('data-position');
+    })  /////////////
+
 
 
   $('#usernumber').inputmask({"mask": "+7(999) 999-99-99"}); //маска телефона

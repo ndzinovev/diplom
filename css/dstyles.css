@@ -369,15 +369,17 @@ h1, h2, h3, p {
  z-index: 5;
 }
 .feedback-bell{
+	display: none;
 	width: 100%;
   max-width: 350px;
   z-index: 6;
 }
 .form-bell{
   position: relative;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-left: 210%;
 	width: 100%;
+	max-width: 320px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -392,6 +394,13 @@ h1, h2, h3, p {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 11px;
+}
+span:hover {
+	cursor: pointer;
+}
+.know-btn {
+	margin-left: 40%;
+	background-image: linear-gradient(77deg, #f897c8, #f79c8c);
 }
 .form-bell div{
 	margin: 15px 0;
@@ -408,9 +417,11 @@ h1, h2, h3, p {
 	margin-bottom: 5px;
 	font-weight: bold;
 }
-.form-bell input{
+.form-bell input,
+.textarea {
 	padding: 10px 30px;
   margin-top: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -432,9 +443,6 @@ i.fa + .form-bell input {
   padding-left: 26px;
 }
 
-.form-bell label span{
-	color: red;
-}
 .form-bell .bot-send-mail{
   width: 60%;
 	padding: 15px 0;
@@ -855,7 +863,7 @@ a {
     margin-top: 2.7%;
     margin-right: -26%;
 }
-.form-bell {
+.bell-btn {
 	margin-left: 156%;
 }
 } /*end 1525px*/

@@ -8,6 +8,26 @@
 	<title>Личный сайт Зиновьева Николая</title>
 	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin_cyrillic-ext-regular.woff2" as="font" type="fonts/woff2" crossorigin>
 	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700.woff2" as="font" type="fonts/woff2" crossorigin >
+
+	<!-- FAVICON-->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" href="css/awesome/css/all.css" />
 	<!-- Базовые стили -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
@@ -23,12 +43,10 @@
 	<script src="js/jquery.validate.js" defer></script>
 	<script src="js/dscript.js" defer></script>
 	
-	
-	
 </head>
 <body>
 								
-<main>
+<main id="main">
 	<div class="tag-container">
 		<div class="skoba animate-item">{ }	</div>
 
@@ -47,24 +65,22 @@
 <section class="my-page">
 	<header>
 
-<!--- Скрытый раздел-->
+						<!--- Скрытый раздел-->
 	<div class="hidden-head"> 
 		<a class="touch-menu"  title="Открыть меню" href="javascript://" aria-label="Открыть меню">
-			
 			<div class="line"></div>
 			<div class="line"></div>
-			
 		</a>
 
 		<nav class="hidden-nav-header">
-				<ul class="menu-nav"> 
-					<li class="nav-li "><a class="nav-a-hidden" href="#myWork">Услуги </a></li>   
-					<li class="nav-li "><a class="nav-a-hidden" href="#portfolio">Портфолио</a></li>	
-					<li class="nav-li "><a class="nav-a-hidden" href="#howMany">Стоимость</a></li>	
-				</ul>
+			<ul class="menu-nav"> 
+				<li class="nav-li "><a class="nav-a-hidden" href="#myWork">Услуги </a></li>   
+				<li class="nav-li "><a class="nav-a-hidden" href="#portfolio">Портфолио</a></li>	
+				<li class="nav-li "><a class="nav-a-hidden" href="#howMany">Стоимость</a></li>	
+			</ul>
 		</nav>		
 	</div> 
-<!--- конец скрытого раздела -->	
+					<!--- конец скрытого раздела -->	
 
 		<div class="container-menu">
 			<nav class="nav-header">
@@ -91,12 +107,6 @@
 	
 
 	<div class="fixed-my-page">
-
-							
-
-
-
-		
 			<div class="my-name">
 				<h1 class="fio">Николай Зиновьев</h1>
 					<p class="prof">Frontend-разработчик и веб-верстальщик</p>
@@ -136,7 +146,7 @@
 			</div>
 	</div>
 
-	<a class="a-maney my-bottom">Узнать стоимость</a>
+	<span class="a-maney my-bottom">Узнать стоимость</span>
 </section> <!--Конец второго блока -->
 
 	
@@ -254,9 +264,8 @@
 					я с вами свяжусь.
 				</div>
 		<form class="feedback-bell" autocomplete="off" action=""   method='post'>
-		
-			<div class="form-bell"> 
-				<a class="cross" href="javascript://" title="Закрыть окно" aria-label="Закрыть окно">&#10006; </a>
+			<div class="form-bell bell-btn"> 
+				<span class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </span>
 
 				<div>
 					<label>Ваше имя <span>*</span></label>
@@ -280,11 +289,32 @@
 
 				<div class="form-check">
 					<input class="input-check" type="checkbox" name="check" value="" required >
-					<span class="span-check">Даю согласие на обработку персональных данных</span>
+					<label class="span-check">Даю согласие на обработку персональных данных</label>
+					
 				</div>
 			</div>
-					
 		</form>	
+
+		<form class="know-more" autocomplete="off" action=""   method='post'>
+			<div class="form-bell know-btn">
+				<span class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </span>
+
+				
+					<label>Ваш E-mail  <span>*</span></label>
+					<input id="usermail" type='email' name='usermail' value="" required >
+					
+                    <label>Задайте вопрос </label>
+                    <textarea class="textarea"  name='usermessage' cols=37 rows=6 ></textarea>
+                    
+                    <input class="bot-send-mail" type='submit' value='ОТПРАВИТЬ'>
+                   
+                    <div class="form-check zakaz-check">
+                        <input class="input-check" type="checkbox" name="check_zakaz" value="" required >
+                        <label class="span-check">Я согласен на обработку персональных данных</label>
+                    </div>
+
+			</div>
+		</form>
 	</div>		
 					
 </body>
