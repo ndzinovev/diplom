@@ -347,7 +347,7 @@ h1, h2, h3, p {
 .fixed-my-page {
   width: 1170px;
   margin: 0 auto;
-  padding-left: 3px;
+  padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,19 +497,21 @@ i.fa + .form-bell input {
 /*-----------------------------------------------------TWO PAGE-----------------------------------------*/
 
 .two-page {
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  padding-top: 93px;
-  padding-bottom: 86px;
+  padding: 93px 10px 86px 10px;
 }
 .fixed-two-page {
   position: relative;
   width: 1170px;
   margin: 0 auto;
   padding-top: 85px;
+  padding-right: 1vw;
+  padding-left: 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -518,22 +520,11 @@ i.fa + .form-bell input {
   width: 260px;
   min-height: 165px;
 }
-.box-img1 {
-  margin-left: 35px;
-}
-.box-img2 {
-  margin-left: 10px;
-}
-.box-img3 {
-  margin-right: -6px;
-}
 .two-page_text {
   margin-top: 12px;
   font-size: 20px;
   line-height: 30px;
   color: #8993ad;
-  font-family: "Roboto";
-  font-weight: 400;
   text-align: center;
 }
 .a-maney {
@@ -621,7 +612,7 @@ i.fa + .form-bell input {
 }
 .a-third {
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 
@@ -690,6 +681,8 @@ i.fa + .form-bell input {
   width: 940px;
   margin: 0 auto;
   padding-top: 80px;
+  padding-right: 1vw;
+  padding-left: 1vw;
   color: #fff;
   font-size: 45px;
   font-weight: bold;
@@ -708,26 +701,26 @@ i.fa + .form-bell input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 81px;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .f-right {
   font-size: 18px;
   color: #8993ad;
-  margin-right: 100px;
+  margin-right: 5vw;
 }
 .f-li {
   margin-bottom: 7px;
-}
-.f-center{
-  width: 295px;
 }
 .menu-contact-li {
   color: #fc557c;
@@ -759,7 +752,7 @@ i.fa + .form-bell input {
 }
 
 .f-left{
-  margin-right: 20px; 
+  margin-right: 5px; 
 }
 .f-order_call {
   display: block;
@@ -830,7 +823,7 @@ a {
 
 .final-block {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 77px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #31293c;
@@ -848,6 +841,7 @@ a {
 }
 .my-name {
 	margin-top: -15px;
+	margin-left: 10px;
 }
 .my-foto {
     width: 57%;
@@ -885,6 +879,9 @@ h1{
 .my-foto {  
 	margin-top: 30px;
 	margin-right: 10px;
+}
+.fixed-two-page {
+	width: 1020px;
 }
 .owl-prev,
 .owl-next {
@@ -948,28 +945,17 @@ h1{
 		margin-left: 40px;
 		z-index: 4;
 	}
-	.fixed-my-page {
-		-webkit-box-pack: left;
-		    -ms-flex-pack: left;
-		        justify-content: left;
-		padding-left: 30px;
-	}
-  	.my-page {
+	.my-page {
 		background:
-		url(../img/shadow.webp) no-repeat 63vw 8vw,
+		url(../img/shadow.webp) no-repeat 47vw 9vw,
 		url(../img/fon.webp) no-repeat 43vw 23vw;
     }
- 	h1{
-	    font-size: 54px;
-	    font-weight: bold;
-    }
-    .my-name {
-	    padding-top: 1px;
-	    padding-left: 15vw;
-  	}
+ 	.my-name {
+	    padding-top: 54vh;
+	}
   	.prof{
 		margin-top: 9px;
-		font-size: 22px;
+		font-size: 20px;
   	}
   	.my-bottom {
 		width: 320px;
@@ -1038,11 +1024,10 @@ h1{
 		padding-top: 85px;
 	}
 	.two-title {
-		margin-right: 30px;
 		padding-top: 2px;
 	}
 	.fixed-two-page {
-		width: 655px;
+		width: 570px;
 		padding-top: 80px;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
@@ -1055,7 +1040,6 @@ h1{
 	}
 	.two-content {
 		margin-bottom: 60px;
-		margin-right: 5px;
 	}
 	.fixed-third {
 		width: 955px;
@@ -1091,34 +1075,31 @@ h1{
 	.owl-carousel button.owl-dot.active {
 		background: #fc557c;
 	}
-	.four-page {
-		margin-top: 40px;
-	}
 	.simvol-items {
 		font-size: 36px;
 		font-weight: 400;
 		color: white;
-	  }
-	  .skobam {
+	}
+	.skobam {
 		position: absolute;
 		margin-top: 15px;
 		margin-left: 154px;
 		-webkit-transform: rotate(29deg);
 		    -ms-transform: rotate(29deg);
 		        transform: rotate(29deg);
-	  }
-	  .sleshm {
+	}
+	.sleshm {
 		position: absolute;
 		margin-top: 28%;
 		margin-left: 86%;
 		-webkit-transform: rotate(-22deg);
 		    -ms-transform: rotate(-22deg);
 		        transform: rotate(-22deg);
-	  }
-	  .simvolm {
+	}
+	.simvolm {
 		display: none;
-	  }
-	  .one_divm {
+	}
+	.one_divm {
 		position: absolute;
 		font-size: 30px;
 		margin-top: 29%;
@@ -1126,16 +1107,17 @@ h1{
 		-webkit-transform: rotate(23deg);
 		    -ms-transform: rotate(23deg);
 		        transform: rotate(23deg);
-	  }
-	  .skoba-right {
+	}
+	.skoba-right {
 		display: none;
-	  }
+	}
 	.a-maney {
 		margin-top: 25px;
 		margin-bottom: 15px;
 	}
 	.third-page {
-		padding-top: 84px;
+		padding-top: 90px;
+		padding-bottom: 75px;
 	}
 	.how-Many {
 		margin-top: 42px;
@@ -1143,14 +1125,15 @@ h1{
 		margin-right: 60px;
 	}  
 	.f-block {
-		height: 290px !important;
-		padding: 100px 163px 0 41px !important;
+		margin-top: 3vh;
+		margin-left: 3vw;
 	}
 	.f-right {
 		margin-right: 57px !important ;
 	}
 	.final-block {
-		padding-top: 8px !important;
+		margin-top: 19vh;
+		padding-top: 15px !important;
 	}
 	.low-text {
 		margin-top: 10px;
@@ -1184,9 +1167,6 @@ h1{
 .f-title {
 	font-size: 28px;
 }
-.f-block {
-	padding: 104px 163px 0 41px !important;
-}
 .f-li {
 	font-size: 15px;
 	margin-bottom: 12px !important;
@@ -1200,9 +1180,6 @@ h1{
 .f-right {
 	margin-right: 0 !important;
 }
-.f-left {
-	margin-right: 100px !important;
-}
 .form-bell {
 	margin-left: 85%;
 }
@@ -1211,35 +1188,40 @@ h1{
 
 
 @media screen and (max-width: 870px) {
-	.call {
-		margin-right: 10px;
-	}
-	.fixed-my-page {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-					}
-  	.my-page {
-		background:
-		url(../img/shadow.webp) no-repeat 28vw 7vw, 
-		url(../img/fon.webp) no-repeat 10vw 16vw;
-		}		
-  	.my-name {
-		  
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1;
-		/*padding-top: 10px;
-		padding-left: 120px;*/
-		
-	  }
-  	.my-foto {
-  		margin-top: 55px;
-  		margin-left: 22%;
-	}
-.a-my-page {
-margin-left: 85px;
+h1,
+h2 {
+	font-size: 42px;
+}
+.call {
+	margin-right: 10px;
+}
+.fixed-my-page {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+				}
+.my-page {
+	background:
+	url(../img/shadow.webp) no-repeat 28vw 7vw, 
+	url(../img/fon.webp) no-repeat 10vw 16vw;
+	}		
+.my-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;	
+	-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+			order: 1;
+			margin-left: 0;
+	padding-top: 10px;
+				
+}
+.my-foto {
+	margin-top: 55px;
+	margin-left: 22%;
 }
 .two-page {
 	padding-top: 270px;
@@ -1268,7 +1250,7 @@ padding-top: 40px;
 		padding-left: 0;
 	}
 	.comment {
-		font-size: 11px;
+		font-size: 12px;
 	}
 	.f-block {
 		height: auto !important;
@@ -1276,8 +1258,8 @@ padding-top: 40px;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 				flex-direction: column;
+				justify-content: start;
 		margin-bottom: 20px;		
-		padding: 20px 163px 0 41px !important;
 	}
 .f-center {
 	margin-bottom: 20px;
@@ -1319,6 +1301,12 @@ padding-top: 40px;
 	.form-bell {
 		margin-left: 58%;
 	}
+	.f-title {
+		font-size: 26px;
+	}
+	.comment {
+		width: 440px;
+	}
 }/*end 760 px */
 
 @media screen and (max-width: 560px) {
@@ -1349,12 +1337,6 @@ padding-top: 40px;
 		margin-top: 10px;
 		padding-left: 1vw;
 	}
-	.fio {
-		font-size: 45px;
-	}
-	.a-my-page {
-		margin-left: 60px;
-	}
 	.two-page {
 		padding-top: 300px;
 	}
@@ -1362,13 +1344,13 @@ padding-top: 40px;
 		font-size: 45px;
 	}
 	.two-content{
-		margin-left: 130px;
+		width: 240px;
 	}
 	.primer {
 		font-size: 45px;
 	}
 	.how-many {
-		width: 450px;
+		width: 430px;
 	}
 	.comment {
 		width: 440px;
@@ -1424,10 +1406,12 @@ padding-top: 40px;
 		display: none;
 		}
 		.fixed-two-page {
+			width: 100vw;
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
 			    -ms-flex-direction: column;
-			        flex-direction: column;
+					flex-direction: column;
+					align-items: center;
 		padding-top: 30px;
 		padding-right: 5px;
 		}
@@ -1441,6 +1425,10 @@ padding-top: 40px;
 		.f-title {
 			line-height: 40px;
 			letter-spacing: 0;
+		}
+		.f-call,
+		.f-mail {
+			font-size: 16px;
 		}
 		.form-bell {
 			margin-left: 32%;
@@ -1461,14 +1449,8 @@ padding-top: 40px;
 	.prof {
 		font-size: 16px;
 	}
-	.a-my-page {
-		margin-left: 3px;
-	}
 	.two-title {
 		font-size: 35px;
-	}
-	.two-content {
-		margin-left: 60px;
 	}
 	.primer {
 		font-size: 35px;
@@ -1545,7 +1527,6 @@ padding-top: 40px;
 	
 	.fixed-my-page {
 		width: 320px;
-		padding-left: 20px;
 	}
   	.my-page {
 		 height: 473px;
@@ -1553,7 +1534,7 @@ padding-top: 40px;
 		 background-size: 136%;
 	}
 	.my-name {
-		width: 281px;
+		width: 300px;
 		padding-left: 0;
 		margin-top: 0;
 	}
@@ -1595,15 +1576,11 @@ padding-top: 40px;
 	}
 	.two-title {
 		padding: 0;
-		margin-right: 7px;
 		font-size: 30px;
 		letter-spacing: normal;
 	}
-	.fixed-two-page {
-	margin-left: 15px;
-	}
 	.two-content {
-		margin-left: 30px;
+		margin-left: 0;
 		margin-bottom: 8px;
 	}
 	.box-img1 {
@@ -1679,8 +1656,7 @@ padding-top: 40px;
 	.f-block {
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
-		padding: 25px 163px 0 20px !important;
-		min-height: 325px !important;
+			min-height: 325px !important;
 	}
 	.f-center {
 		margin-top: 5px;
@@ -1692,7 +1668,7 @@ padding-top: 40px;
 	}
 	.f-call,
 	.f-mail {
-		font-size: 20px !important;
+		font-size: 18px !important;
 		font-weight: bold;
 		padding-left: 17px !important;
 		color: #8993ad;
@@ -1734,24 +1710,34 @@ padding-top: 40px;
 
 }/*end 362 px */
 @media screen and (max-width: 330px) {
-	.my-foto {
-		width: 70vw;
-		margin-top: 84px;
-		margin-left: 19%;
-	}
+.my-foto {
+	width: 70vw;
+	margin-top: 84px;
+	margin-left: 19%;
+}
 
-	.my-name {
-		padding-top: 0;
-		}
-		.fixed-two-page {
-			 margin-left: 0;
-		}
+.my-name {
+	padding-top: 0;
+}
+.fixed-two-page {
+		margin-left: 0;
+}
+.f-block {
+	padding-left: 5vw;
+	padding-top: 46px;
+}
+.f-right {
+	margin-bottom: 20px;
+}
 .f-center {
 padding-bottom: 15px;
 }
 .f-order_call {
 display: block;
 margin-top: 27px;
+}
+.social {
+	margin-top: 0;
 }
 .low-text {
 margin-top: 0;
