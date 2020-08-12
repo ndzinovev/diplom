@@ -6,9 +6,8 @@
     // если форма без ошибок
     if(empty($errors)){     
         // собираем данные из формы
-        $message  = "Имя пользователя: " . $_POST['username'] . "<br/>";
-        $message .= "Tel пользователя: " . $_POST['usernumber'] . "<br/>";
-        $message .= "Текст письма: " . $_POST['text_comment'];      
+        $message  = "Email пользователя: " . $_POST['usermail'] . "<br/>";
+        $message .= "Текст письма: " . $_POST['usermessage'];      
         send_mail($message); // отправим письмо
         // выведем сообщение об успехе
         $msg_box = "<span style='color: green;'>Сообщение успешно отправлено!</span>";

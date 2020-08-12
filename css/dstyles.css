@@ -612,12 +612,6 @@ i.fa + .form-bell input {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.block_slider2 {
-  height: 290px;
-}
-.block_slider3 {
-  height: 290px;
-}
 .name-site {
   margin-top: 15px;
   line-height: 60px;
@@ -852,9 +846,6 @@ a {
 		url(../img/shadow.webp) no-repeat 62vw 6vw,
 		  url(../img/fon.webp) no-repeat 60vw 8vw;
 }
-.fixed-my-page {
-	padding-left: 8px;
-}
 .my-name {
 	margin-top: -15px;
 }
@@ -902,6 +893,21 @@ h1{
 .form-bell {
 	margin-left: 126%;
 }
+.skobam,
+.skoba-right {
+	display: none;
+}
+.one_divm {
+	margin-top: 25%;
+}
+.simvolm {
+	margin-top: 17%;
+	margin-left: 1%;
+}
+.sleshm {
+	margin-left: 90%;
+}
+
 
 } /*end 1200px*/
 
@@ -950,7 +956,7 @@ h1{
 	}
   	.my-page {
 		background:
-		url(../img/shadow.webp) no-repeat 47vw 8vw,
+		url(../img/shadow.webp) no-repeat 63vw 8vw,
 		url(../img/fon.webp) no-repeat 43vw 23vw;
     }
  	h1{
@@ -958,11 +964,12 @@ h1{
 	    font-weight: bold;
     }
     .my-name {
-	    padding-top: 242px;
-	    padding-left: 10px;
+	    padding-top: 1px;
+	    padding-left: 15vw;
   	}
   	.prof{
-	    margin-top: 9px;
+		margin-top: 9px;
+		font-size: 22px;
   	}
   	.my-bottom {
 		width: 320px;
@@ -1129,7 +1136,6 @@ h1{
 	}
 	.third-page {
 		padding-top: 84px;
-		height: 1004px;
 	}
 	.how-Many {
 		margin-top: 42px;
@@ -1161,53 +1167,53 @@ h1{
 
 
 @media screen and (max-width: 925px) {
-  	.my-page {
-		background:
-		url(../img/shadow.webp) no-repeat 41vw 5vw,
-		url(../img/fon.webp) no-repeat 30vw 16vw;
-		
+.my-page {
+	background:
+	url(../img/shadow.webp) no-repeat 57vw 10vw,
+	url(../img/fon.webp) no-repeat 30vw 16vw;
+	
   }
-  	.my-foto {
-  		margin-top: 4.7%;
-  		margin-left: -8%;
-	}
-	.two-page {
-		padding-top: 242px;
-	}
-	.how-many {
-		padding: 70px 5px 0 0;
-		margin-left: 20px;
-	}
-	.f-title {
-		font-size: 28px;
-	}
-	.f-block {
-		padding: 104px 163px 0 41px !important;
-	}
-	.f-li {
-		font-size: 15px;
-		margin-bottom: 12px !important;
-	} 
-	.menu-contact-li {
-		font-size: 20px;
-	}
-	.final-block{
-		margin-top: 25px;
-	}
-	.f-right {
-		margin-right: 0 !important;
-	}
-	.f-left {
-		margin-right: 100px !important;
-	}
-	.form-bell {
-		margin-left: 85%;
-	}
+.my-foto {
+	margin-top: 4.7%;
+	margin-left: -8%;
+}
+.how-many {
+	padding: 70px 5px 0 0;
+	margin-left: 20px;
+}
+.f-title {
+	font-size: 28px;
+}
+.f-block {
+	padding: 104px 163px 0 41px !important;
+}
+.f-li {
+	font-size: 15px;
+	margin-bottom: 12px !important;
+} 
+.menu-contact-li {
+	font-size: 20px;
+}
+.final-block{
+	margin-top: 25px;
+}
+.f-right {
+	margin-right: 0 !important;
+}
+.f-left {
+	margin-right: 100px !important;
+}
+.form-bell {
+	margin-left: 85%;
+}
 
 }/*end 925 px */
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
+	.call {
+		margin-right: 10px;
+	}
 	.fixed-my-page {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -1220,11 +1226,12 @@ h1{
 		url(../img/fon.webp) no-repeat 10vw 16vw;
 		}		
   	.my-name {
+		  
 		-webkit-box-ordinal-group: 2;
 		    -ms-flex-order: 1;
 		        order: 1;
-		padding-top: 10px;
-		padding-left: 120px;
+		/*padding-top: 10px;
+		padding-left: 120px;*/
 		
 	  }
   	.my-foto {
@@ -1246,6 +1253,7 @@ padding-bottom: 30px;
 		padding-top: 84px;
 		height: 825px;
 	}
+	
 	.owl-dots {
 		margin-top: 35px;
 		margin-bottom: 10px;
@@ -1326,7 +1334,7 @@ padding-top: 40px;
 	}
   	.my-page {
 		background:
-		url(../img/shadow.webp) no-repeat 15vw 6vw,
+		url(../img/shadow.webp) no-repeat 15vw 18vw,
       	url(../img/fon.webp) no-repeat -15vw 16vw;
 	}
 	.gb {
@@ -1339,7 +1347,7 @@ padding-top: 40px;
 	}
 	.my-name {
 		margin-top: 10px;
-		padding-left: 15px;
+		padding-left: 1vw;
 	}
 	.fio {
 		font-size: 45px;
@@ -1420,17 +1428,8 @@ padding-top: 40px;
 			-webkit-box-direction: normal;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
-			padding-top: 30px;
-		}
-		.third-page {
-			height: 880px;
-			padding-left: 20px;
-		}
-		.owl-stage-outer {
-			padding-left: 95px;
-		}
-		.owl-dots {
-			margin-right: 415px;
+		padding-top: 30px;
+		padding-right: 5px;
 		}
 		.four-page {
 			margin-top: 50px;
@@ -1460,16 +1459,16 @@ padding-top: 40px;
 		font-size: 35px;
 	}
 	.prof {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.a-my-page {
-		margin-left: 15px;
+		margin-left: 3px;
 	}
 	.two-title {
 		font-size: 35px;
 	}
 	.two-content {
-		margin-left: 75px;
+		margin-left: 60px;
 	}
 	.primer {
 		font-size: 35px;
@@ -1734,7 +1733,7 @@ padding-top: 40px;
 	}
 
 }/*end 362 px */
-@media screen and (max-width: 322px) {
+@media screen and (max-width: 330px) {
 	.my-foto {
 		width: 70vw;
 		margin-top: 84px;

@@ -112,7 +112,7 @@ $(document).ready(function(){
 
 
   $('.feedback-bell').each(function(){
-    $(this).validate({                                   // валидация формы 
+    $(this).validate({                                   // валидация формы звонка
       errorPlacement: function(error, element) {
         return true;
       },
@@ -133,7 +133,7 @@ $(document).ready(function(){
 
         $.ajax({
           type: 'POST',
-          url: 'send.php',
+          url: 'php/send.php',
           data: th.serialize(),
           
         }).done(() => {
@@ -141,14 +141,54 @@ $(document).ready(function(){
           th.trigger('reset');
           $(".fon-popup").hide();
           $("body").removeClass("fixed");
-          //$(".post-messages").show();
+         
          alert("Ваше сообщение успешно отправлено. Спасибо!")
           
         });
 
         return false;
       }
-    })
-  })
-
+    });
   
+
+    $('.know-more').each(function(){
+      $(this).validate({                                   // валидация формы запроса
+        errorPlacement: function(error, element) {
+          return true;
+        },
+        rules: {
+          usermail:{
+            required: true,
+            email: true, 
+            },
+            usermessage:{
+              required: true,
+              },
+            check:{
+              required: true,
+            },
+          }, 
+        submitHandler(form) {
+          let th = $(form);
+  
+          $.ajax({
+            type: 'POST',
+            url: 'php/quest.php',
+            data: th.serialize(),
+            
+          }).done(() => {
+            
+            th.trigger('reset');
+            $(".fon-popup").hide();
+            $("body").removeClass("fixed");
+           
+           alert("Ваше сообщение успешно отправлено. Спасибо!")
+            
+          });
+  
+          return false;
+        }
+      });
+}); 
+
+})  // end document
