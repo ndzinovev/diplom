@@ -204,7 +204,8 @@ h1, h2, h3, p {
   margin-left: 25px;
   text-align: center;
   color: #fc557c;
-   border: 1px solid #fc557c;
+  border: 1px solid #fc557c;
+  background-color: #ffffff;
 }
 .order_call:hover {
   -webkit-transition: color 0.3s;
@@ -325,6 +326,7 @@ h1, h2, h3, p {
   text-align: center;
   letter-spacing: 1.2px;
   color: #fff;
+  border: none;
   background-color: #ff4e2e ;
 }
 .my-bottom:hover {
@@ -360,8 +362,8 @@ h1, h2, h3, p {
 
 .fon-popup {
  display: none; 
- width:100%;
- min-height:100%;
+ width:100vw;
+ min-height:100vh;
  background-color: rgba(0,0,0,0.5);
  overflow:hidden;
  position:fixed;
@@ -377,7 +379,7 @@ h1, h2, h3, p {
 .form-bell{
   position: relative;
   margin-top: 10vh;
-  margin-left: 210%;
+  margin-left: 41vw;
 	width: 100%;
 	max-width: 320px;
 	display: -webkit-box;
@@ -455,8 +457,7 @@ i.fa + .form-bell input {
 	font-weight: bold;
 	cursor: pointer;
 	text-align: center;
-  letter-spacing: 1.2px;
-  color: #fff;
+	color: #fff;
   background-color: #ff4e2e ;
   border-radius: 5px;
   }
@@ -485,6 +486,9 @@ i.fa + .form-bell input {
   border: 3px solid #f10909 !important;
   
 }
+.know-more {
+	display: none;
+}
 .post-messages {
   display: none;
   width: 300px;
@@ -499,7 +503,7 @@ i.fa + .form-bell input {
 .two-page {
   width: 100vw;
   text-align: center;
-  padding: 93px 10px 86px 10px;
+  padding: 3%;
 }
 .fixed-two-page {
   position: relative;
@@ -848,9 +852,6 @@ a {
     margin-top: 2.7%;
     margin-right: -26%;
 }
-.bell-btn {
-	margin-left: 156%;
-}
 } /*end 1525px*/
 
 
@@ -886,9 +887,6 @@ h1{
 .owl-prev,
 .owl-next {
 	display: none;
-}
-.form-bell {
-	margin-left: 126%;
 }
 .skobam,
 .skoba-right {
@@ -1346,6 +1344,9 @@ padding-top: 40px;
 	.two-content{
 		width: 240px;
 	}
+	.owl-stage-outer {
+		padding-left: 20vw;
+	}
 	.primer {
 		font-size: 45px;
 	}
@@ -1702,7 +1703,7 @@ padding-top: 40px;
 	.form-bell {
 		margin-top: 9vh;
 		width: 300px;
-		margin-left: 10px;
+		margin-left: 4vw;
 	}
 	.form-bell .bot-send-mail {
 		font-size: 12px;

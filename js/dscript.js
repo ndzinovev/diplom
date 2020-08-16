@@ -29,10 +29,10 @@ $(document).ready(function(){
    
 	var touch = $('.touch-menu');
   var nav = $('.hidden-nav-header');
-  var wLine = '<div class="line"></div>'
+  var wLine = $('<div class="line"></div>');
 	$(touch).on('click',function(event){
 		event.preventDefault();
-		var title = $(this).attr('title') 
+		var title = $(this).attr('title'); 
 		 if (nav.css('display')=='none') {
 		 	$(this).attr('title','Скрыть меню');
 		 	$(this).attr('aria-label','Скрыть меню');
@@ -47,9 +47,9 @@ $(document).ready(function(){
       $('.touch-menu').empty();
       $('.touch-menu').append('<div class="line"></div>');
       $('.touch-menu').append('<div class="line"></div>');
-      $(nav).hide(400)
+      $(nav).hide(400);
 		 }	
-  })
+  });
   
   $('.nav-a-hidden').click(function(){
     $(nav).hide(300);
@@ -64,7 +64,7 @@ $(document).ready(function(){
      document.body.dataset.position = pagePosition;
   	 document.body.style.top = -pagePosition + 'px';
     $("body").addClass("fixed");
-  }) 
+  }); 
   
   
   
@@ -73,28 +73,25 @@ $(document).ready(function(){
       let pagePosition = parseInt(document.body.dataset.position, 10);
       $("body").removeClass('fixed') ;
       window.scroll({ top: pagePosition, left: 0 });
-    
-   // document.body.removeAttribute('data-position');
-    
-
-    
-  })  //////////////////////////////////////////////////////////////////////////////////////////
+       
+  });  
 
   $('.a-my-page , .a-maney').click(function(event) {  //обработка кнопки Узнать больше
-    $('.fon-popup , .know-more')
+    $('.fon-popup , .know-more');
         $('.fon-popup , .know-more').show(400, "swing");
         let pagePosition = window.scrollY;
         document.body.dataset.position = pagePosition;
   	    document.body.style.top = -pagePosition + 'px';
     $("body").addClass("fixed");
-  }) 
+  });
+   
   $('.hidden-call').click(function(event) {
         $('.fon-popup , .know-more').show(400, "swing");
         let pagePosition = window.scrollY;
         document.body.dataset.position = pagePosition;
         document.body.style.top = -pagePosition + 'px';
     $("body").addClass("fixed");
-  }) 
+  }); 
   
   
   $('.cross').click(function(event){
@@ -102,13 +99,12 @@ $(document).ready(function(){
     let pagePosition = parseInt(document.body.dataset.position, 10);
     $("body").removeClass('fixed') ;
     window.scroll({ top: pagePosition, left: 0 });
-    //document.body.removeAttribute('data-position');
-    })  /////////////
+    });  
 
 
 
   $('#usernumber').inputmask({"mask": "+7(999) 999-99-99"}); //маска телефона
-  })
+  });
 
 
   $('.feedback-bell').each(function(){
