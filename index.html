@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="yandex-verification" content="f908e04f6cb2b4dc" />
 	<title>Личный сайт Зиновьева Николая</title>
-	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin_cyrillic-ext-regular.woff2" as="font" type="fonts/woff2" crossorigin>
-	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700.woff2" as="font" type="fonts/woff2" crossorigin >
+	<link rel="preload" href="font/roboto-v20-cyrillic_latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700.woff2" as="font" type="font/woff2" crossorigin >
 
 	<!-- FAVICON-->
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -99,8 +99,8 @@
 				<button class="order_call">Заказать звонок</button>
 			</div>
 
-			<a class="hidden-call" href="javascript://">
-				<div class="truba" aria-label="Заказать звонок" title="Заказать звонок"><i class="fas fa-phone-alt"></i></div>
+			<a class="hidden-call" aria-label="Заказать звонок" href="javascript://">
+				<div class="truba"  title="Заказать звонок"><i class="fas fa-phone-alt"></i></div>
 			</a>
 		</div>	
 
@@ -263,7 +263,7 @@
 	<div class="fon-popup">
 		<form class="feedback-bell" autocomplete="off" action="php/send.php"  method='post'>
 			<div class="form-bell bell-btn"> 
-				<span class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </span>
+				<a class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </a>
 
 				<div>
 					<label>Ваше имя <span>*</span></label>
@@ -295,7 +295,7 @@
 
 		<form class="know-more" autocomplete="off" action="php/quest.php"  method='post'>
 			<div class="form-bell know-btn">
-				<span class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </span>
+				<a class="cross"  title="Закрыть окно" aria-label="Закрыть окно">&#10006; </a>
 
 				
 					<label>Ваш E-mail  <span>*</span></label>
